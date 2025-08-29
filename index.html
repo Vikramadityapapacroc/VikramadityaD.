@@ -12,7 +12,7 @@
   <meta property="og:description" content="Shop fine-art wildlife prints and explore field projects." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="images/og-cover.jpg" />
-  <meta property="og:url" content="https://your-domain-or-username.github.io/your-repo/" />
+  <meta property="og:url" content="https://vikramadityapapacroc.github.io/VikramadityaD./" />
 
   <!-- Favicons (optional) -->
   <link rel="icon" href="images/favicon.png" />
@@ -20,37 +20,51 @@
   <!-- CSS -->
   <link rel="preload" href="styles.css" as="style" />
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
 
-  <!-- Structured data (helps search/algorithms understand your site) -->
+  <!-- Structured data -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"Person",
     "name":"Vikramaditya Das",
     "jobTitle":"Wildlife Biologist & Photographer",
-    "url":"https://your-domain-or-username.github.io/your-repo/",
-    "image":"https://your-domain-or-username.github.io/your-repo/images/profile.jpg",
+    "url":"https://vikramadityapapacroc.github.io/VikramadityaD./",
+    "image":"https://vikramadityapapacroc.github.io/VikramadityaD./images/profile.jpg",
     "sameAs":[
       "https://www.instagram.com/yourhandle",
       "https://www.linkedin.com/in/yourhandle"
     ]
   }
   </script>
+
+  <style>
+    /* Typing cursor effect */
+    #typing-intro::after {
+      content: '|';
+      display: inline-block;
+      margin-left: 2px;
+      animation: blink 1s step-start infinite;
+      color: #000;
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+  </style>
 </head>
 
 <body>
-  <!-- Accessible skip link -->
+  <!-- Skip link -->
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- Header / Navigation -->
+  <!-- Header -->
   <header class="site-header">
     <div class="container header-inner">
       <a class="logo" href="#">
         <span class="logo-mark">VD</span>
         <span class="logo-text">Vikramaditya&nbsp;Das</span>
       </a>
-
-      <!-- CSS-only mobile menu (checkbox hack, no JS) -->
       <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle menu" />
       <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
         <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
@@ -67,26 +81,32 @@
     </div>
   </header>
 
-  <!-- Hero (psychology: one clear promise + CTA above the fold) -->
+  <!-- Hero -->
   <section class="hero">
     <div class="container hero-inner">
-      <h1>Wildlife, seen up close.</h1>
-      <p class="lead">
-        Field-crafted imagery of snakes, birds, mammals, and quiet landscapes — photographed with a biologist’s eye for behavior and habitat.
+      <h1 style="font-family: 'UnifrakturCook', cursive; font-size: 3.5em; text-align: left; margin: 20px 0;">
+        Vikramaditya Das
+      </h1>
+
+      <p style="text-align: left; font-size: 1.2em; font-style: italic; margin-bottom: 30px;">
+        <span id="typing-intro">
+          Wildlife biologist and photographer, I pursue adventure wherever it leads, turning the natural world into story and art through my camera. Every expedition teaches something new, about animals, landscapes, and the thrill of discovery itself. A perpetual observer, I’m on a mission to claim the ‘Coolest Uncle of the Legacy’ award, proving that curiosity and style can coexist in equal measure.
+        </span>
       </p>
+
       <div class="cta-row">
         <a href="#shop" class="btn btn--primary">Shop limited prints</a>
         <a href="#work" class="btn btn--secondary">See portfolio</a>
       </div>
+
       <figure class="hero-shot">
-        <!-- Replace with a striking banner (optimized ~1800px wide) -->
         <img src="images/hero.jpg" alt="A black-bearded crow in flight over a grassland at dusk." loading="eager" />
       </figure>
     </div>
   </section>
 
   <main id="main">
-    <!-- Social proof / trust (algorithms + humans love clarity + credibility) -->
+    <!-- Trust Section -->
     <section class="trust">
       <div class="container trust-inner">
         <ul class="trust-list">
@@ -97,7 +117,7 @@
       </div>
     </section>
 
-    <!-- Featured Work -->
+    <!-- Portfolio -->
     <section id="work" class="section">
       <div class="container">
         <div class="section-head">
@@ -105,29 +125,23 @@
           <p class="section-sub">Selected series from the field.</p>
         </div>
 
-        <!-- Responsive, gapless grid. Link to large files or project pages. -->
         <div class="grid gallery">
-          <!-- Repeat cards as needed; use real image paths -->
           <a class="card" href="images/large/snake-01.jpg" target="_blank">
             <img src="images/thumbs/snake-01.jpg" alt="Portrait of a green pit viper coiled on moss." loading="lazy" />
             <span class="chip">Snakes</span>
           </a>
-
           <a class="card" href="images/large/bird-01.jpg" target="_blank">
             <img src="images/thumbs/bird-01.jpg" alt="Red-whiskered bulbul perched on a branch." loading="lazy" />
             <span class="chip">Birds</span>
           </a>
-
           <a class="card" href="images/large/mammal-01.jpg" target="_blank">
             <img src="images/thumbs/mammal-01.jpg" alt="Golden jackal by a lakeshore at dawn." loading="lazy" />
             <span class="chip">Mammals</span>
           </a>
-
           <a class="card" href="images/large/landscape-01.jpg" target="_blank">
             <img src="images/thumbs/landscape-01.jpg" alt="Monsoon light over rolling grasslands." loading="lazy" />
             <span class="chip">Landscapes</span>
           </a>
-
           <a class="card" href="project-crows.html">
             <img src="images/thumbs/crow-collage.jpg" alt="Crow head and claw collage artwork." loading="lazy" />
             <span class="chip">Crow Series</span>
@@ -136,7 +150,7 @@
       </div>
     </section>
 
-    <!-- Shop / Prints (buttons can link to Gumroad, Payhip, Shopify Buy Button, or your lab partner) -->
+    <!-- Shop -->
     <section id="shop" class="section section-alt">
       <div class="container">
         <div class="section-head">
@@ -145,7 +159,6 @@
         </div>
 
         <div class="grid shop">
-          <!-- Product 1 -->
           <article class="product">
             <img src="images/shop/snake-print.jpg" alt="Fine-art print of a green pit viper on moss." loading="lazy" />
             <h3>Green Pit Viper — #01/50</h3>
@@ -156,7 +169,6 @@
             </div>
           </article>
 
-          <!-- Product 2 -->
           <article class="product">
             <img src="images/shop/bulbul-print.jpg" alt="Fine-art print of a red-whiskered bulbul." loading="lazy" />
             <h3>Red-whiskered Bulbul — #01/30</h3>
@@ -167,7 +179,6 @@
             </div>
           </article>
 
-          <!-- Product 3 -->
           <article class="product">
             <img src="images/shop/crow-print.jpg" alt="Fine-art print from the Crow Series." loading="lazy" />
             <h3>Crow Series — #01/25</h3>
@@ -178,8 +189,6 @@
             </div>
           </article>
         </div>
-
-        <!-- Subtle urgency (ethical nudge) -->
         <p class="note center">Small batches. Once a run sells out, it’s gone.</p>
       </div>
     </section>
@@ -188,7 +197,7 @@
     <section id="about" class="section">
       <div class="container about">
         <div class="about-media">
-          <img src="images/profile.jpg" alt="Portrait of Vikramaditya Das in the field with camera." loading="lazy" />
+          <img src="images/profile.jpg" alt="Portrait of Vikramaditya D. in the field with camera." loading="lazy" />
         </div>
         <div class="about-text">
           <h2>About</h2>
@@ -204,7 +213,7 @@
       </div>
     </section>
 
-    <!-- Contact / Lead capture -->
+    <!-- Contact -->
     <section id="contact" class="section section-alt">
       <div class="container contact">
         <h2>Contact</h2>
@@ -247,9 +256,25 @@
         <span>© <span id="year"></span> All rights reserved.</span>
       </div>
     </div>
+
     <script>
-      // small enhancement: current year
       document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+    <script>
+      const introText = document.getElementById('typing-intro').textContent;
+      document.getElementById('typing-intro').textContent = '';
+      let i = 0;
+
+      function typeIntro() {
+        if (i < introText.length) {
+          document.getElementById('typing-intro').textContent += introText.charAt(i);
+          i++;
+          setTimeout(typeIntro, 30);
+        }
+      }
+
+      window.onload = typeIntro;
     </script>
   </footer>
 </body>
