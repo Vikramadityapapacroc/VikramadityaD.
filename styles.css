@@ -1,36 +1,136 @@
+/* -------------------- General Styles -------------------- */
 body {
-  background-color: #121212; /* Charcoal matte background */
+  background-color: #2e2e2e; /* Softer charcoal matte */
   color: #ffffff; /* White text */
-  font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif; 
   margin: 0;
   padding: 0;
 }
 
-/* Your Big Name */
-h1 {
-  color: #ffcc00; /* Nat Geo Yellow */
-  font-size: 3rem;
-  font-family: "Old English Text MT", "Gothic", serif;
+/* -------------------- Header / Navigation -------------------- */
+.site-header {
+  background: transparent;
+  padding: 20px 0;
+}
+
+.logo-text {
+  font-family: 'UnifrakturCook', cursive; /* Gothic font */
+  font-size: 2.5rem;
+  color: #ffd700; /* NatGeo yellow */
+}
+
+/* -------------------- Hero Section -------------------- */
+.hero {
+  padding: 80px 20px 40px 20px;
+}
+
+.hero h1 {
+  color: #ffd700; /* NatGeo yellow */
+  font-size: 3.5rem;
+  font-family: 'UnifrakturCook', cursive;
+  text-align: left;
   margin-bottom: 20px;
 }
 
-/* Intro Paragraph */
-.intro {
+.hero p.intro {
+  color: #ffffff;
   font-size: 1.2rem;
   line-height: 1.8;
-  color: #ffffff;
   max-width: 700px;
+  text-align: left;
+  font-style: italic;
+  white-space: pre-wrap; /* preserves line breaks for typing */
 }
 
-/* Typing Effect Cursor */
+/* Typing animation */
 .typing::after {
   content: "|";
   animation: blink 0.7s infinite;
-  color: #ffcc00; /* Nat Geo Yellow cursor */
+  color: #ffd700; /* yellow cursor */
 }
 
 @keyframes blink {
   0% { opacity: 1; }
   50% { opacity: 0; }
   100% { opacity: 1; }
+}
+
+/* -------------------- Buttons -------------------- */
+.btn {
+  padding: 10px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn--primary {
+  background-color: #ffd700;
+  color: #121212;
+}
+
+.btn--secondary {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+/* -------------------- Images -------------------- */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* -------------------- Sections -------------------- */
+.section {
+  padding: 60px 20px;
+}
+
+.section-alt {
+  background-color: #1f1f1f; /* slightly darker alternate sections */
+}
+
+.section h2 {
+  color: #ffd700; /* section headings in yellow */
+  font-size: 2rem;
+}
+
+.section p {
+  color: #ffffff;
+}
+
+/* -------------------- Footer -------------------- */
+.site-footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 40px 20px;
+}
+
+.site-footer a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+/* -------------------- Gallery / Shop -------------------- */
+.grid.gallery, .grid.shop {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card, .product {
+  background-color: #2e2e2e;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hover, .product:hover {
+  transform: scale(1.02);
 }
