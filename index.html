@@ -2,280 +2,57 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>Vikramaditya Das | Wildlife Biologist & Photographer</title>
-  <meta name="description" content="Wildlife photography prints and projects by Vikramaditya Das — snakes, birds, mammals, and landscapes. Limited editions, behind-the-scenes field notes, and licensing." />
-
-  <!-- Open Graph for social sharing -->
-  <meta property="og:title" content="Wildlife Photography by Vikramaditya Das" />
-  <meta property="og:description" content="Shop fine-art wildlife prints and explore field projects." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="images/og-cover.jpg" />
-  <meta property="og:url" content="https://vikramadityapapacroc.github.io/VikramadityaD./" />
-
-  <!-- Favicons (optional) -->
-  <link rel="icon" href="images/favicon.png" />
-
-  <!-- CSS -->
-  <link rel="preload" href="styles.css" as="style" />
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
-
-  <!-- Structured data -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Person",
-    "name":"Vikramaditya Das",
-    "jobTitle":"Wildlife Biologist & Photographer",
-    "url":"https://vikramadityapapacroc.github.io/VikramadityaD./",
-    "image":"https://vikramadityapapacroc.github.io/VikramadityaD./images/profile.jpg",
-    "sameAs":[
-      "https://www.instagram.com/yourhandle",
-      "https://www.linkedin.com/in/yourhandle"
-    ]
-  }
-  </script>
-
-  <style>
-    /* Typing cursor effect */
-    #typing-intro::after {
-      content: '|';
-      display: inline-block;
-      margin-left: 2px;
-      animation: blink 1s step-start infinite;
-      color: #000;
-    }
-
-    @keyframes blink {
-      50% { opacity: 0; }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vikramaditya D. | Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Wildlife photography by Vikramaditya D. — field-crafted prints, projects, and stories.">
 </head>
-
 <body>
-  <!-- Skip link -->
-  <a class="skip-link" href="#main">Skip to content</a>
-
-  <!-- Header -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="#">
-        <span class="logo-mark">VD</span>
-        <span class="logo-text">Vikramaditya&nbsp;Das</span>
-      </a>
-      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle menu" />
-      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
-        <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
-          <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
-        </svg>
-      </label>
-
-      <nav class="nav">
-        <a href="#work">Portfolio</a>
-        <a href="#shop">Prints</a>
-        <a href="#about">About</a>
-        <a href="#contact" class="btn btn--ghost">Contact</a>
-      </nav>
-    </div>
+  <!-- NAV: on each page mark the current tab with class="active" -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="active">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="journal.html">Journal</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="container hero-inner">
-      <h1 style="font-family: 'UnifrakturCook', cursive; font-size: 3.5em; text-align: left; margin: 20px 0;">
-        Vikramaditya Das
-      </h1>
-
-      <p style="text-align: left; font-size: 1.2em; font-style: italic; margin-bottom: 30px;">
-        <span id="typing-intro">
-          Wildlife biologist and photographer, I pursue adventure wherever it leads, turning the natural world into story and art through my camera. Every expedition teaches something new, about animals, landscapes, and the thrill of discovery itself. A perpetual observer, I’m on a mission to claim the ‘Coolest Uncle of the Legacy’ award, proving that curiosity and style can coexist in equal measure.
-        </span>
-      </p>
-
-      <div class="cta-row">
-        <a href="#shop" class="btn btn--primary">Shop limited prints</a>
-        <a href="#work" class="btn btn--secondary">See portfolio</a>
-      </div>
-
-      <figure class="hero-shot">
-        <img src="images/hero.jpg" alt="A black-bearded crow in flight over a grassland at dusk." loading="eager" />
+  <main>
+    <!-- HERO (Image 1) -->
+    <!-- Replace images/image1.jpg with your hero photo (2000–2400px wide recommended) -->
+    <section class="hero">
+      <figure class="figure hero-figure">
+        <img src="images/image1.jpg" alt="Hero image placeholder — replace with Image 1">
       </figure>
-    </div>
-  </section>
 
-  <main id="main">
-    <!-- Trust Section -->
-    <section class="trust">
-      <div class="container trust-inner">
-        <ul class="trust-list">
-          <li>Limited editions with signed COA</li>
-          <li>Archival papers, museum-grade inks</li>
-          <li>Worldwide shipping via trusted labs</li>
-        </ul>
+      <!-- Intro block (Image 1A text area) -->
+      <div class="intro">
+        <h1>Wildlife biologist and photographer</h1>
+        <p>
+          Pursuing adventure wherever it leads, metamorphosing the wildlands,
+          the unknown, the familiar, and the everyday into story and art through
+          my camera. Expedition yielding its own experiences, wild or civilized,
+          the unseen and the quiet thrill of discovery.
+        </p>
       </div>
     </section>
 
-    <!-- Portfolio -->
-    <section id="work" class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>Featured portfolio</h2>
-          <p class="section-sub">Selected series from the field.</p>
-        </div>
-
-        <div class="grid gallery">
-          <a class="card" href="images/large/snake-01.jpg" target="_blank">
-            <img src="images/thumbs/snake-01.jpg" alt="Portrait of a green pit viper coiled on moss." loading="lazy" />
-            <span class="chip">Snakes</span>
-          </a>
-          <a class="card" href="images/large/bird-01.jpg" target="_blank">
-            <img src="images/thumbs/bird-01.jpg" alt="Red-whiskered bulbul perched on a branch." loading="lazy" />
-            <span class="chip">Birds</span>
-          </a>
-          <a class="card" href="images/large/mammal-01.jpg" target="_blank">
-            <img src="images/thumbs/mammal-01.jpg" alt="Golden jackal by a lakeshore at dawn." loading="lazy" />
-            <span class="chip">Mammals</span>
-          </a>
-          <a class="card" href="images/large/landscape-01.jpg" target="_blank">
-            <img src="images/thumbs/landscape-01.jpg" alt="Monsoon light over rolling grasslands." loading="lazy" />
-            <span class="chip">Landscapes</span>
-          </a>
-          <a class="card" href="project-crows.html">
-            <img src="images/thumbs/crow-collage.jpg" alt="Crow head and claw collage artwork." loading="lazy" />
-            <span class="chip">Crow Series</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Shop -->
-    <section id="shop" class="section section-alt">
-      <div class="container">
-        <div class="section-head">
-          <h2>Limited edition prints</h2>
-          <p class="section-sub">Signed & numbered. Archival. Ships worldwide.</p>
-        </div>
-
-        <div class="grid shop">
-          <article class="product">
-            <img src="images/shop/snake-print.jpg" alt="Fine-art print of a green pit viper on moss." loading="lazy" />
-            <h3>Green Pit Viper — #01/50</h3>
-            <p class="meta">Hahnemühle Photo Rag · 16×24 in · Certificate of Authenticity</p>
-            <div class="price-row">
-              <span class="price">₹9,900</span>
-              <a class="btn btn--primary" href="https://your-store-link.com/product-1" target="_blank" rel="noopener">Buy print</a>
-            </div>
-          </article>
-
-          <article class="product">
-            <img src="images/shop/bulbul-print.jpg" alt="Fine-art print of a red-whiskered bulbul." loading="lazy" />
-            <h3>Red-whiskered Bulbul — #01/30</h3>
-            <p class="meta">Canson Baryta · 12×18 in · Certificate of Authenticity</p>
-            <div class="price-row">
-              <span class="price">₹7,900</span>
-              <a class="btn btn--primary" href="https://your-store-link.com/product-2" target="_blank" rel="noopener">Buy print</a>
-            </div>
-          </article>
-
-          <article class="product">
-            <img src="images/shop/crow-print.jpg" alt="Fine-art print from the Crow Series." loading="lazy" />
-            <h3>Crow Series — #01/25</h3>
-            <p class="meta">Hahnemühle Hemp · 18×18 in · Certificate of Authenticity</p>
-            <div class="price-row">
-              <span class="price">₹8,900</span>
-              <a class="btn btn--primary" href="https://your-store-link.com/product-3" target="_blank" rel="noopener">Buy print</a>
-            </div>
-          </article>
-        </div>
-        <p class="note center">Small batches. Once a run sells out, it’s gone.</p>
-      </div>
-    </section>
-
-    <!-- About -->
-    <section id="about" class="section">
-      <div class="container about">
-        <div class="about-media">
-          <img src="images/profile.jpg" alt="Portrait of Vikramaditya D. in the field with camera." loading="lazy" />
-        </div>
-        <div class="about-text">
-          <h2>About</h2>
-          <p>
-            I’m a wildlife biologist and photographer focusing on behavior, adaptation, and the quieter moods of the wild. My work spans snakes, birds, mammals, and landscapes, with prints crafted for long-term display.
-          </p>
-          <ul class="bullet">
-            <li>Available for editorial & conservation projects</li>
-            <li>Licensing for books, albums & campaigns</li>
-            <li>Talks & workshops on field ethics and technique</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section section-alt">
-      <div class="container contact">
-        <h2>Contact</h2>
-        <p>For commissions, licensing, or bulk print orders.</p>
-        <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
-          <label>
-            <span>Name</span>
-            <input type="text" name="name" required />
-          </label>
-          <label>
-            <span>Email</span>
-            <input type="email" name="email" required />
-          </label>
-          <label class="full">
-            <span>Message</span>
-            <textarea name="message" rows="5" required></textarea>
-          </label>
-          <button class="btn btn--primary" type="submit">Send</button>
-          <p class="form-note">By sending, you agree to be contacted regarding your request.</p>
-        </form>
-      </div>
+    <!-- Small gallery placeholders (Image 2–6) -->
+    <section class="grid gallery-grid" aria-label="Preview images">
+      <!-- Replace filenames with your real photos -->
+      <figure class="figure"><img src="images/image2.jpg" alt="Image 2 placeholder"></figure>
+      <figure class="figure"><img src="images/image3.jpg" alt="Image 3 placeholder"></figure>
+      <figure class="figure"><img src="images/image4.jpg" alt="Image 4 placeholder"></figure>
+      <figure class="figure"><img src="images/image5.jpg" alt="Image 5 placeholder"></figure>
+      <figure class="figure"><img src="images/image6.jpg" alt="Image 6 placeholder"></figure>
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <span class="logo-mark">VD</span>
-        <strong>Vikramaditya&nbsp;Das</strong>
-      </div>
-      <nav class="footer-nav">
-        <a href="#work">Portfolio</a>
-        <a href="#shop">Prints</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <div class="footer-meta">
-        <a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a>
-        <span>© <span id="year"></span> All rights reserved.</span>
-      </div>
-    </div>
-
-    <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
-
-    <script>
-      const introText = document.getElementById('typing-intro').textContent;
-      document.getElementById('typing-intro').textContent = '';
-      let i = 0;
-
-      function typeIntro() {
-        if (i < introText.length) {
-          document.getElementById('typing-intro').textContent += introText.charAt(i);
-          i++;
-          setTimeout(typeIntro, 30);
-        }
-      }
-
-      window.onload = typeIntro;
-    </script>
+  <footer>
+    <p>Vikramaditya D. photography © 2025</p>
   </footer>
 </body>
 </html>
+
