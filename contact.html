@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact | Vikramaditya D.</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="journal.html">Journal</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-form">
+      <h1>Contact</h1>
+      <p>
+        For inquiries regarding commissioned work, prints, licensing, or collaborations:
+      </p>
+
+      <!-- Form: replace action with your Formspree endpoint if you prefer -->
+      <form action="https://formspree.io/f/your-form-id" method="POST">
+        <label>
+          Name<br>
+          <input type="text" name="name" required>
+        </label>
+
+        <label>
+          Email<br>
+          <input type="email" name="email" required>
+        </label>
+
+        <label>
+          Message<br>
+          <textarea name="message" rows="6" required></textarea>
+        </label>
+
+        <button type="submit">Send</button>
+      </form>
+
+      <p class="muted">Or email directly: <a href="mailto:linkvikram3@gmail.com">linkvikram3@gmail.com</a></p>
+      <p class="muted">Instagram: <a href="https://instagram.com/papacroque_" target="_blank">@papacroque_</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Vikramaditya D. photography © 2025</p>
+  </footer>
+</body>
+</html>
