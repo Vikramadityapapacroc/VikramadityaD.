@@ -24,35 +24,40 @@
     </header>
 
     <main class="contact-page">
-        <section class="letter-box">
-            <h2>The Letter Box:</h2>
-            <p>
-                “For inquiries regarding commissioned work, prints, or image licensing, or simply to share a thought, I invite you to get in touch. Curiosity often sparks the best conversations and I welcome those that may grow into collaboration.”
-            </p>
-            <p>E-mail- <a href="mailto:linkvikram3@gmail.com">linkvikram3@gmail.com</a></p>
-            <p>Instagram- <a href="https://www.instagram.com/papacroque_" target="_blank">@papacroque_</a></p>
-        </section>
-
-        <section class="contact-form">
-            <form action="#" method="POST">
-                <div class="form-group">
-                    <label>Name (required)</label>
-                    <div class="name-fields">
-                        <input type="text" name="firstName" placeholder="First Name" required>
-                        <input type="text" name="lastName" placeholder="Last Name" required>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email (required)</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message (required)</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit">SEND</button>
-            </form>
-        </section>
+        <div class="contact-layout-container">
+            <div class="left-aligned">
+                <section class="letter-box">
+                    <h2>The Letter Box:</h2>
+                    <p>
+                        “For inquiries regarding commissioned work, prints, or image licensing, or simply to share a thought, I invite you to get in touch. Curiosity often sparks the best conversations and I welcome those that may grow into collaboration.”
+                    </p>
+                    <p>E-mail- <a href="mailto:linkvikram3@gmail.com">linkvikram3@gmail.com</a></p>
+                    <p>Instagram- <a href="https://www.instagram.com/papacroque_" target="_blank">@papacroque_</a></p>
+                </section>
+            </div>
+            <div class="right-aligned">
+                <section class="contact-form">
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label>Name (required)</label>
+                            <div class="name-fields">
+                                <input type="text" name="firstName" placeholder="First Name" required>
+                                <input type="text" name="lastName" placeholder="Last Name" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email (required)</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message (required)</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit">SEND</button>
+                    </form>
+                </section>
+            </div>
+        </div>
     </main>
 
 </body>
