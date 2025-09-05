@@ -1,13 +1,34 @@
+/*
+    Font Imports (Note: These fonts might not be installed on all systems.
+    For the fonts to display correctly, you would need to link to them from
+    a service like Google Fonts or host the font files yourself.)
+*/
+
+.logo, .letter-box h2 {
+    font-family: "Old English Text MT", serif;
+}
+
+nav ul li a, .contact-page label, .contact-page input, .contact-page textarea, .contact-page button {
+    font-family: "Century Schoolbook", serif;
+}
+
+.bio-section p {
+    font-family: "Times New Roman", serif;
+}
+
+.project-categories li a {
+    font-family: "Batang", serif;
+}
+
 :root {
-    --primary-color: #000000;
-    --secondary-color: #333333;
+    --primary-color: #363636; /* Matte Medium Dark Gray */
+    --secondary-color: #424242; /* A slightly lighter shade for accents */
     --accent-color: #FFD700;
     --text-color: #ffffff;
     --dark-text: #000000;
 }
 
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: var(--primary-color);
@@ -64,6 +85,7 @@ main {
     padding: 50px;
 }
 
+/* Home Page Specifics */
 .image-section-home {
     display: flex;
     flex-wrap: wrap;
@@ -73,6 +95,7 @@ main {
 }
 
 .image-placeholder {
+    position: relative;
     width: 45%;
     height: 400px;
     background-color: var(--secondary-color);
@@ -84,23 +107,47 @@ main {
     text-align: center;
 }
 
+.image-placeholder p:first-child {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    margin: 0;
+}
+
+.wide-image-placeholder {
+    width: 90%;
+}
+
+.bio-image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
 .bio-section {
-    max-width: 800px;
-    margin: 0 auto 50px;
-    text-align: center;
-    font-size: 18px;
+    flex: 1;
     color: var(--text-color);
+    max-width: 50%; /* Adjust as needed */
 }
 
 .bio-section p {
     margin: 0;
 }
 
+.bio-side-image {
+    flex: 1;
+}
+
+/* Projects Page Specifics */
 .project-categories {
     list-style: none;
     padding: 0;
     max-width: 800px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .project-categories li {
@@ -113,108 +160,20 @@ main {
     font-size: 18px;
 }
 
-.letter-box {
-    max-width: 600px;
-    margin: 0 auto 50px;
-    text-align: center;
-    color: var(--text-color);
-}
-
-.letter-box h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    font-weight: normal;
-}
-
-.letter-box p {
-    margin: 0 0 15px;
-}
-
-.letter-box a {
-    color: var(--text-color);
-    text-decoration: none;
-}
-
-.contact-form {
-    max-width: 600px;
+/* Contact Page Specifics */
+.contact-layout-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1200px; /* Constrain the width of the container */
     margin: 0 auto;
 }
 
-.form-group {
-    margin-bottom: 20px;
+.left-aligned {
+    flex: 1;
+    text-align: left;
 }
 
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-    color: var(--text-color);
-}
-
-.name-fields {
-    display: flex;
-    gap: 10px;
-}
-
-.name-fields input {
-    width: 50%;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid var(--secondary-color);
-    background-color: transparent;
-    color: var(--text-color);
-    box-sizing: border-box;
-}
-
-button[type="submit"] {
-    display: block;
-    width: 100px;
-    padding: 10px 20px;
-    background-color: transparent;
-    color: var(--text-color);
-    border: 1px solid var(--text-color);
-    cursor: pointer;
-    text-transform: uppercase;
-}
-
-/* Specific styling for the black and yellow design */
-.black-yellow-design {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    overflow: hidden;
-}
-
-.black-bar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 200px;
-    background-color: #363636;
-}
-
-.yellow-bar {
-    position: absolute;
-    top: 0;
-    left: 20px;
-    width: 100px;
-    height: 100%;
-    background-color: #FFD700;
-}
-
-.inner-box {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 60px;
-    height: 80px;
-    border: 2px solid black;
-}
+.right-aligned {
+    flex: 1;
+    text-align: left
