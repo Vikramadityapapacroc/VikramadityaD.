@@ -1,136 +1,169 @@
-/* -------------------- General Styles -------------------- */
-body {
-  background-color: #2e2e2e; /* Softer charcoal matte */
-  color: #ffffff; /* White text */
-  font-family: Arial, sans-serif; 
+/* ---------- Base Reset ---------- */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-/* -------------------- Header / Navigation -------------------- */
-.site-header {
-  background: transparent;
-  padding: 20px 0;
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: #111; /* dark background */
+  color: #eee;
+  line-height: 1.6;
 }
 
-.logo-text {
-  font-family: 'UnifrakturCook', cursive; /* Gothic font */
-  font-size: 2.5rem;
-  color: #ffd700; /* NatGeo yellow */
+/* ---------- Navbar ---------- */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  background: #111;
+  border-bottom: 1px solid #333;
 }
 
-/* -------------------- Hero Section -------------------- */
+.navbar a {
+  text-decoration: none;
+  color: #eee;
+  font-size: 1rem;
+  position: relative;
+  padding: 0.25rem 0;
+}
+
+.navbar a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background: #FFD300; /* yellow underline */
+}
+
+/* ---------- Hero Section ---------- */
 .hero {
-  padding: 80px 20px 40px 20px;
-}
-
-.hero h1 {
-  color: #ffd700; /* NatGeo yellow */
-  font-size: 3.5rem;
-  font-family: 'UnifrakturCook', cursive;
-  text-align: left;
-  margin-bottom: 20px;
-}
-
-.hero p.intro {
-  color: #ffffff;
-  font-size: 1.2rem;
-  line-height: 1.8;
-  max-width: 700px;
-  text-align: left;
-  font-style: italic;
-  white-space: pre-wrap; /* preserves line breaks for typing */
-}
-
-/* Typing animation */
-.typing::after {
-  content: "|";
-  animation: blink 0.7s infinite;
-  color: #ffd700; /* yellow cursor */
-}
-
-@keyframes blink {
-  0% { opacity: 1; }
-  50% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-/* -------------------- Buttons -------------------- */
-.btn {
-  padding: 10px 25px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.btn--primary {
-  background-color: #ffd700;
-  color: #121212;
-}
-
-.btn--secondary {
-  background-color: transparent;
-  border: 2px solid #ffffff;
-  color: #ffffff;
-}
-
-/* -------------------- Images -------------------- */
-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-}
-
-/* -------------------- Sections -------------------- */
-.section {
-  padding: 60px 20px;
-}
-
-.section-alt {
-  background-color: #1f1f1f; /* slightly darker alternate sections */
-}
-
-.section h2 {
-  color: #ffd700; /* section headings in yellow */
-  font-size: 2rem;
-}
-
-.section p {
-  color: #ffffff;
-}
-
-/* -------------------- Footer -------------------- */
-.site-footer {
-  background-color: #1a1a1a;
-  color: #ffffff;
-  padding: 40px 20px;
-}
-
-.site-footer a {
-  color: #ffd700;
-  text-decoration: none;
-}
-
-.site-footer a:hover {
-  text-decoration: underline;
-}
-
-/* -------------------- Gallery / Shop -------------------- */
-.grid.gallery, .grid.shop {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.card, .product {
-  background-color: #2e2e2e;
-  border-radius: 10px;
-  overflow: hidden;
   text-align: center;
-  transition: transform 0.3s;
+  margin: 2rem auto;
+  max-width: 1200px;
 }
 
-.card:hover, .product:hover {
-  transform: scale(1.02);
+.hero img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+  margin-bottom: 1rem;
+}
+
+.intro {
+  margin-top: 1rem;
+  padding: 0 1rem;
+}
+
+.intro h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #FFD300;
+}
+
+.intro p {
+  font-size: 1rem;
+  color: #ccc;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ---------- Grid Galleries ---------- */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  padding: 2rem 1rem;
+}
+
+.figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+  transition: transform 0.2s;
+}
+
+.figure img:hover {
+  transform: scale(1.03);
+}
+
+/* ---------- Categories (Projects page) ---------- */
+.category-card {
+  background: #1a1a1a;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.category-card:hover {
+  background: #222;
+}
+
+.category-card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.25rem;
+  color: #FFD300;
+}
+
+.category-card p {
+  color: #bbb;
+  font-size: 0.9rem;
+}
+
+/* ---------- Forms (Contact page) ---------- */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2rem 0;
+  max-width: 600px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background: #FFD300;
+  color: #111;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #e6be00;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid #333;
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* ---------- Utility ---------- */
+.muted {
+  color: #999;
+  font-size: 0.9rem;
 }
