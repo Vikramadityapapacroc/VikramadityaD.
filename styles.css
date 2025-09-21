@@ -1,3 +1,9 @@
+/*
+    Font Imports (Note: These fonts might not be installed on all systems.
+    For the fonts to display correctly, you would need to link to them from
+    a service like Google Fonts or host the font files yourself.)
+*/
+
 .logo, .letter-box h2 {
     font-family: "Old English Text MT", serif;
 }
